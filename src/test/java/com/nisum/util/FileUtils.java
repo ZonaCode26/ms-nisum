@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-public class FileUtils {
+public final class FileUtils {
   private static final String TEST_DATA_ROOT_PATH = "src/test/resources/";
 
   private FileUtils() {

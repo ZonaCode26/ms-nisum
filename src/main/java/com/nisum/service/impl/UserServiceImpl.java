@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+import com.nisum.exception.MessageException;
 import com.nisum.mapper.UserMapper;
 import com.nisum.model.dto.UserDto;
 import com.nisum.model.dto.UserRequest;
@@ -37,14 +37,13 @@ public class UserServiceImpl extends CrudImpl<User, Long> implements IUserServic
     return repository;
   }
 
-  @Transactional
   @SneakyThrows
   @Override
   public UserResponse registrar(UserRequest request) {
     requestValidator.validate(request);
 
     if (Boolean.TRUE.equals(repository.existsByEmail(request.getEmail()))) {
-      throw new Exception("El correo ya registrado");
+      throw new MessageException("El correo ya registrado");
     }
 
     User user = repository.save(setUser(request));
