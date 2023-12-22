@@ -66,6 +66,11 @@ correcto. (El valor de la expresión regular debe ser configurable)
 ● Swagger ✔️
 ● Se recomienda y se valorizará mucho la utilización de Patrones de Diseño y buenas practicas ✔️
 
+## DIAGRAMA SOLUCIÓN
+#### Flujo Registro
+
+![Diagrama Solución drawio](https://github.com/ZonaCode26/ms-nisum/assets/28936885/f509e5df-c525-422c-a483-fef5d377f1c4)
+
 ## API Reference
 
 #### Registrar usuario
