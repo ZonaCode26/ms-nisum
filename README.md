@@ -134,7 +134,7 @@ Response Body - 400 BAD REQUEST
 
 ![image](https://github.com/ZonaCode26/ms-nisum/assets/28936885/f434d265-415e-405d-97b9-09cb2d8601eb)
 
-- Contraseña con cumple el pattern
+- Contraseña no cumple con el pattern
 
 ![image](https://github.com/ZonaCode26/ms-nisum/assets/28936885/b120f6ab-0fbb-4e94-b84c-c4ccdc3abee8)
 
